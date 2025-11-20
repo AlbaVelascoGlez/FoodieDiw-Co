@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foodie Diw&Co</title>
     <link rel="icon" type="image/png" href="./assets/logo.png">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
@@ -62,6 +63,34 @@
                 <h3>Bebidas</h3>
             </div>
         </section>
+
+        <section class="delivery">
+            <img src="./assets/delivery.png" alt="Delivery" class="delivery-img">
+            <div class="delivery-content">
+                <h2>Pide a Domicilio</h2>
+                <p>Recibe tus platos favoritos en la puerta de tu casa</p>
+            </div>
+
+        </section>
+
+        <section class="visit">
+            <div class="visit-content">
+                <h2>Visítanos en...</h2>
+                <div class="visit-address">
+                    <p><strong>Dirección:</strong></p>
+                    <p>Calle Principal 123</p>
+                    <p>33001 Oviedo, Asturias</p>
+                </div>
+                <div class="visit-schedule">
+                    <p><strong>Horario:</strong></p>
+                    <p>Lunes - Viernes: 14:00 - 22:00</p>
+                    <p>Sábados: 13:00 - 22:00</p>
+                </div>
+            </div>
+            <div class="visit-map">
+                <div id="map"></div>
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
@@ -69,6 +98,7 @@
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script src="./js/script.js"></script>
 </body>
 </html>
