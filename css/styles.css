@@ -1,6 +1,7 @@
 @import url('banner.css');
 @import url('categories.css');
 @import url('visit&delivery.css');
+@import url('about-us.css');
 
 * {
     margin: 0;
@@ -15,8 +16,6 @@ body {
     flex-direction: column;
 }
 
-
-/* Estilos de la navbar */
 .navbar {
     background-color: #ffffff;
     padding: 0;
@@ -88,18 +87,18 @@ body {
     font-weight: 800;
 }
 
-.navbar a:active {
+.navbar-menu li a.active {
     font-weight: 800;
 }
 
-
+.navbar a:active {
+    font-weight: 800;
+}
 
 .content {
     flex: 1;
     padding: 0;
 }
-
-
 
 .footer {
     background-color: #000;
@@ -139,7 +138,7 @@ body {
 }
 
 .footer-links li a:hover {
-    color: #45b7d1;
+    font-weight: 800;
 }
 
 
