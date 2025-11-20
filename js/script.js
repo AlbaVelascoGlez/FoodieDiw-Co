@@ -11,14 +11,29 @@ $(document).ready(function() {
         }
     });
 
-    // Inicializar el mapa de Leaflet
-    var map = L.map('map').setView([43.3614, -5.8490], 15);
+    // Inicializar el mapa de Leaflet solo si existe el elemento
+    if ($('#map').length) {
+        var map = L.map('map').setView([43.3614, -5.8490], 15);
 
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-    }).addTo(map);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
 
-    L.marker([43.3614, -5.8490]).addTo(map)
-        .bindPopup('<b>Foodie Diw&Co</b><br>Calle Principal 123')
-        .openPopup();
+        L.marker([43.3614, -5.8490]).addTo(map)
+            .bindPopup('<b>Foodie Diw&Co</b><br>Calle Principal 123')
+            .openPopup();
+    }
+
+    // Desplegar al hacer click
+    $('.faq-question').on('click', function() {
+        const faqItem = $(this).parent('.faq-item');
+        const faqAnswer = $(this).next('.faq-answer');
+
+    
+        $('.faq-item').not(faqItem).removeClass('active');
+        $('.faq-answer').not(faqAnswer).slideUp(300);
+
+        faqItem.toggleClass('active');
+        faqAnswer.slideToggle(300);
+    });
 });
