@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    background-color: #ff6b6b;
+    padding: 20px;
+    min-height: 80px;
+}
+
+.content {
+    background-color: #4ecdc4;
+    flex: 1;
+    padding: 20px;
+}
+
+.footer {
+    background-color: #45b7d1;
+    padding: 20px;
+    min-height: 100px;
+}
