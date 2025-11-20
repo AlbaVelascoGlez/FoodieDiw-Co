@@ -1,4 +1,6 @@
 @import url('banner.css');
+@import url('categories.css');
+
 * {
     margin: 0;
     padding: 0;
@@ -97,7 +99,6 @@ body {
 }
 
 
-
 .footer {
     background-color: #45b7d1;
     padding: 20px;
@@ -134,4 +135,5 @@ body {
         max-height: 300px;
         padding: 10px 0;
     }
+
 }
