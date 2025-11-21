@@ -1,0 +1,23 @@
+.menu-header {
+    background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
+}
+
+.price {
+    color: #ff6b6b;
+}
+
+.quantity-btn {
+    background: #ff6b6b;
+}
+
+.quantity-btn:hover:not(:disabled) {
+    background: #ee5a6f;
+}
+
+.add-to-cart {
+    background: #ff6b6b;
+}
+
+.add-to-cart:hover {
+    background: #ee5a6f;
+}

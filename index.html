@@ -24,7 +24,16 @@
                 <li><a href="index.html" class="active">Inicio</a></li>
                 <li><a href="pages/about-us.html">Sobre Nosotros</a></li>
                 <li><a href="pages/contact.html">Contacto</a></li>
-                <li><a href="#carrito">Carrito</a></li>
+                <li>
+                    <a href="#carrito" class="cart-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="9" cy="21" r="1"></circle>
+                            <circle cx="20" cy="21" r="1"></circle>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                        </svg>
+                        <span class="cart-badge">0</span>
+                    </a>
+                </li>
             </ul>
         </div>
     </nav>
@@ -38,30 +47,30 @@
         </section>
 
         <section class="categories">
-            <div class="category-bubble">
+            <a href="pages/starters.html" class="category-bubble">
                 <div class="bubble-circle">
                     <img src="./assets/entrantes.jpg" alt="Entrantes">
                 </div>
                 <h3>Entrantes</h3>
-            </div>
-            <div class="category-bubble">
+            </a>
+            <a href="pages/mains.html" class="category-bubble">
                 <div class="bubble-circle">
                     <img src="./assets/principales.jpg" alt="Principales">
                 </div>
                 <h3>Principales</h3>
-            </div>
-            <div class="category-bubble">
+            </a>
+            <a href="pages/desserts.html" class="category-bubble">
                 <div class="bubble-circle">
                     <img src="./assets/postres.jpg" alt="Postres">
                 </div>
                 <h3>Postres</h3>
-            </div>
-            <div class="category-bubble">
+            </a>
+            <a href="pages/drinks.html" class="category-bubble">
                 <div class="bubble-circle">
                     <img src="./assets/bebidas.jpg" alt="Bebidas">
                 </div>
                 <h3>Bebidas</h3>
-            </div>
+            </a>
         </section>
 
         <section class="delivery">
@@ -112,5 +121,6 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script src="./js/script.js"></script>
+    <script src="./js/menu-cart.js"></script>
 </body>
 </html>
