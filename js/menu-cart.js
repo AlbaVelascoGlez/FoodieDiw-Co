@@ -1,21 +1,21 @@
+// obtener cantidad del localstorage (función global)
+function getCartCount() {
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+    return cart.reduce((total, item) => total + item.quantity, 0);
+}
+
+// Actualizar (función global)
+function updateCartBadge() {
+    const count = getCartCount();
+    $('.cart-badge').text(count);
+    if (count === 0) {
+        $('.cart-badge').hide();
+    } else {
+        $('.cart-badge').show();
+    }
+}
+
 $(document).ready(function() {
-    // obtener cantidad del localstorage
-    function getCartCount() {
-        const cart = JSON.parse(localStorage.getItem('cart')) || [];
-        return cart.reduce((total, item) => total + item.quantity, 0);
-    }
-
-    // Actualizar
-    function updateCartBadge() {
-        const count = getCartCount();
-        $('.cart-badge').text(count);
-        if (count === 0) {
-            $('.cart-badge').hide();
-        } else {
-            $('.cart-badge').show();
-        }
-    }
-
     updateCartBadge();
 
     // Añadir
@@ -49,7 +49,7 @@ $(document).ready(function() {
         }
     });
 
-    // Handle add to cart
+    // Añadir al carrito
     $('.add-to-cart').on('click', function() {
         const $menuItem = $(this).closest('.menu-item');
         const itemName = $menuItem.find('h3').text();
