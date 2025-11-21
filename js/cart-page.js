@@ -52,6 +52,7 @@ $(document).ready(function() {
             $emptyCart.show();
             $cartItemsList.removeClass('active');
             calculateTotals();
+            updateCartBadge();
             return;
         }
 
