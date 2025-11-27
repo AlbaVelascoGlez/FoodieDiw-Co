@@ -1,9 +1,11 @@
 .delivery {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding: 30px 40px;
     background-color: #fff;
+    max-width: 1680px;
+    margin: 0 auto;
 }
 
 .delivery-content h2 {
@@ -23,12 +25,18 @@
 }
 
 .visit {
+    background-color: #f9f9f9;
+    width: 100%;
+}
+
+.visit-wrapper {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding: 50px 40px;
-    background-color: #f9f9f9;
     gap: 40px;
+    max-width: 1680px;
+    margin: 0 auto;
 }
 
 .visit-content {
@@ -104,7 +112,7 @@
         margin-top: 20px;
     }
 
-    .visit {
+    .visit-wrapper {
         flex-direction: column;
         padding: 40px 20px;
         gap: 30px;
