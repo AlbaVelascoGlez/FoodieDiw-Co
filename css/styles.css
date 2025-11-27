@@ -78,8 +78,10 @@ body {
 
 .navbar-menu {
     display: flex;
+    align-items: center;
     list-style: none;
     gap: 30px;
+    margin: 0;
 }
 
 .navbar-menu li a {
