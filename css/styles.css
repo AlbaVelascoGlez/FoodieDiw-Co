@@ -3,11 +3,9 @@
 @import url('visit&delivery.css');
 @import url('about-us.css');
 @import url('menu-items.css');
-@import url('starters.css');
-@import url('mains.css');
-@import url('desserts.css');
-@import url('drinks.css');
 @import url('cart.css');
+@import url('contact.css');
+@import url('faqs.css');
 
 * {
     margin: 0;
