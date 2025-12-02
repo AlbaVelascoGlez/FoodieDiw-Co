@@ -4,7 +4,7 @@ Reto 1 - Diseño de Interfaces Web
 
 ## 📋 Descripción
 
-FoodieDiw-Co es una aplicación web para un restaurante que permite a los usuarios explorar el menú, añadir productos al carrito y gestionar sus pedidos. El proyecto está desarrollado con HTML, CSS y JavaScript (jQuery).
+FoodieDiw-Co es una aplicación web para un restaurante que permite a los usuarios explorar el menú y añadir productos al carrito. El proyecto está desarrollado con HTML, CSS y JavaScript (jQuery).
 
 ## 🌐 Demo en Vivo
 
