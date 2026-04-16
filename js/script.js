@@ -36,4 +36,11 @@ $(document).ready(function() {
         faqItem.toggleClass('active');
         faqAnswer.slideToggle(300);
     });
+
+    // ── jQuery UI Menu (navegación entre categorías de menú) ──────
+    if ($('#menu-category-nav').length) {
+        $('#menu-category-nav').menu();
+    }
+
 });
+

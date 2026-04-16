@@ -1,0 +1,67 @@
+/* JQUERY UI MENU — navegación entre categorías del menu */
+
+#menu-category-nav.ui-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    border: none;
+    background: transparent;
+    padding: 0;
+    width: auto;
+    font-family: Arial, sans-serif;
+    box-shadow: none;
+}
+
+#menu-category-nav.ui-menu .ui-menu-item {
+    width: auto;
+    float: none;
+    background: #fff;
+    border: 2px solid #9c27b0;
+    border-radius: 8px;
+}
+
+#menu-category-nav.ui-menu .ui-menu-item .ui-menu-item-wrapper {
+    color: #9c27b0;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 8px 18px;
+    border-radius: 6px;
+    border: none;
+    display: block;
+    transition: background 0.25s, color 0.25s;
+}
+
+#menu-category-nav.ui-menu .ui-menu-item .ui-menu-item-wrapper.ui-state-active,
+#menu-category-nav.ui-menu .ui-menu-item .ui-menu-item-wrapper:hover {
+    background: #9c27b0;
+    color: #fff;
+    margin: 0;
+    border-radius: 6px;
+}
+
+#menu-category-nav.ui-menu .ui-menu-item.current-page .ui-menu-item-wrapper {
+    background: #9c27b0;
+    color: #fff;
+    pointer-events: none;
+}
+
+.menu-category-nav-wrapper {
+    max-width: 1680px;
+    margin: 0 auto;
+    padding: 0 2rem 1.5rem;
+}
+
+.menu-category-nav-wrapper h4 {
+    font-size: 13px;
+    font-weight: 600;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .menu-category-nav-wrapper {
+        padding: 0 1rem 1.5rem;
+    }
+}
