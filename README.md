@@ -15,6 +15,7 @@ FoodieDiw-Co es una aplicación web para un restaurante que permite a los usuari
 ## ✨ Características
 
 - **Navegación intuitiva**: Menú responsive con toggle para móviles
+- **Navegación entre categorías**: Componente jQuery UI Menu para explorar Entrantes, Principales, Postres y Bebidas desde cualquier página de menú
 - **Categorías de menú**: Entrantes, Principales, Postres y Bebidas
 - **Carrito de compra**:
   - Añadir productos con cantidad personalizada
@@ -32,6 +33,7 @@ FoodieDiw-Co es una aplicación web para un restaurante que permite a los usuari
 - CSS3
 - JavaScript
 - jQuery 3.7.1
+- jQuery UI 1.13.3 (componente Menu para navegación entre categorías)
 - Leaflet.js (para mapas)
 - Google Fonts
 
